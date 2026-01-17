@@ -31,7 +31,7 @@ class JaccardSimilarity:
         return jaccard_list_similarity(list_a, list_b)
 
 
-def jaccard_similarity(string_a, string_b):
+def jaccard_similarity(string_a: str, string_b: str):
     obj = JaccardSimilarity(string_a)
     return obj.score(string_b)
 
